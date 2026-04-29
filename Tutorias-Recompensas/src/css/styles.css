@@ -24,3 +24,98 @@ body{
     width: 90%;
     margin: 0 auto;
 }
+
+
+/* Main  */
+/* HERO */
+
+.hero {
+    background-color: #a9c7d6;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    text-align: center;
+}
+
+.hero__text h2 {
+    font-size: 2rem;
+}
+
+.hero__text h3 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.hero__img img {
+    max-width: 200px;
+}
+
+/* ABOUT */
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem;
+    align-items: center;
+    gap: 1rem;
+}
+
+.about__text {
+    flex: 1;
+}
+
+.about__img img {
+    max-width: 250px;
+}
+
+/* REWARDS */
+.rewards {
+    background-color: #a9c7d6;
+    text-align: center;
+    padding: 2rem;
+}
+
+.rewards__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+}
+
+.reward img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* DOWNLOAD */
+.download {
+    padding: 2rem;
+    text-align: center;
+}
+
+.download__content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.download__content img {
+    max-width: 150px;
+}
+
+.stores img {
+    width: 120px;
+    margin: 10px;
+}
+
+/* FOOTER */
+.footer {
+    background-color: #a9c7d6;
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+    flex-wrap: wrap;
+    text-align: center;
+}
