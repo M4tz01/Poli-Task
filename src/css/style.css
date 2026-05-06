@@ -1,6 +1,4 @@
 :root {
-    
-    --colorPrimario: #ffffff;
     --colorSecundario: #6c63ff; 
     --colorResaltado: #d14d33; 
     --colorTexto: #333;
@@ -28,8 +26,13 @@ html {
 body {
     font-family: var(--fuentePrincipal);
     color: var(--colorTexto);
+    font-size: 21px;
 }
 
+h2 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
 
 .container {
     max-width: 160rem;
@@ -121,7 +124,6 @@ body {
 .hero {
     background-color: #a9c7d6;
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
     padding: 8rem 5%;
@@ -150,4 +152,218 @@ body {
 .hero__img img {
     max-width: 450px;
     filter: drop-shadow(0 10px 20px rgba(0,0,0,0.2));
+}
+/* ABOUT */
+.about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem;
+    gap: 2rem;
+}
+
+.about__text {
+    width: 60%;
+    text-align: center;
+}
+.about__text h2{
+    font-size: 4rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.about__text p{
+    font-size: 2.5rem;
+
+}
+
+.about__img img {
+    width: 450px;
+    border-radius: 100px;
+}
+
+/* REWARDS */
+.rewards {
+    background-color: #a9c7d6;
+    text-align: center;
+    padding: 2rem;
+}
+
+.rewards__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+.reward img {
+    width: 250px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.reward p{
+    margin-top: 1rem;
+    
+}
+
+
+/* DOWNLOAD */
+.download {
+    padding: 1rem;
+    text-align: center;
+}
+
+.download__content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.download__content img {
+    max-width: 150px;
+    
+}
+
+.download p {
+    margin-bottom: 1rem;
+}
+.stores img {
+    width: 100px;
+    margin: 10px;
+    cursor: pointer;
+
+}
+
+/* CONTACT */
+.contact {
+    padding: 2rem;
+    text-align: center;
+    background-color:#a9c7d6 ;
+}
+
+.contact h2 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+.contact__form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    max-width: 600px;
+    margin: 2rem auto; /* 🔥 centra y separa */
+
+    background: rgb(186, 186, 186); /* 🔥 esto mejora mucho */
+    padding: 1.5rem;
+    border-radius: 10px;
+}
+
+.contact__form input,
+.contact__form textarea {
+    padding: 1rem;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    min-height: 50px;   /* 🔥 más alto */
+}
+
+.contact__form button {
+    padding: 0.5rem;
+    background-color: #3464a7;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* FOOTER */
+.footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+    flex-wrap: wrap;
+    text-align: center;
+    padding:5rem;
+}
+
+.footer__icons{
+    display: flex;
+    gap: 5rem;
+    margin-top: 10px;
+}
+
+.footer__icons img{
+    width: 50px;
+    cursor: pointer;
+
+}
+.footer h3 {
+    margin-bottom: 0.5rem;
+}
+
+
+@media (max-width: 768px) {
+
+    /* NAVBAR */
+    .navbar {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .navbar__menu {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    /* HERO */
+    .hero {
+        flex-direction: column;
+        padding: 4rem 2rem;
+    }
+
+    .hero__text h2 { font-size: 4rem; }
+    .hero__text h3 { font-size: 3rem; }
+    .hero__text h4 { font-size: 5rem; }
+
+    .hero__img img {
+        max-width: 300px;
+    }
+
+    /* ABOUT */
+    .about {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about__text {
+        width: 100%;
+    }
+
+    .about__img img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    /* DOWNLOAD */
+    .download__content {
+        flex-direction: column;
+    }
+
+    /* CONTACT */
+    .contact {
+        padding: 2rem 1rem;
+    }
+
+    .contact__form {
+        width: 90%;
+        max-width: none;
+    }
+
+    /* FOOTER */
+    .footer {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
 }
