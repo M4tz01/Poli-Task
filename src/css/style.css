@@ -2,7 +2,7 @@
 :root {
     --colorSecundario: #6c63ff; 
     --colorResaltado: #d14d33; 
-    --colorTexto: #222; /* 🔥 mejor contraste */
+    --colorTexto: #222; /* mejor contraste */
 
     --colorUno: #FFFFFF;
     --colorCuatro: #293A4E;
@@ -22,17 +22,17 @@
 html {
     background-color: var(--colorUno);
     font-size: 62.5%;
-    scroll-behavior: smooth; /* 🔥 mejora UX */
+    scroll-behavior: smooth; /* mejora UX */
 }
 
 body {
     font-family: var(--fuentePrincipal);
     color: var(--colorTexto);
-    font-size: 1.6rem; /* 🔥 mejor que 21px */
+    font-size: 1.6rem; /* mejor que 21px */
     line-height: 1.5;
 }
 
-/* 🔥 IMÁGENES OPTIMIZADAS */
+/* IMÁGENES OPTIMIZADAS */
 img {
     max-width: 100%;
     height: auto;
@@ -48,7 +48,7 @@ h2 {
 
 /* CONTENEDOR */
 .container {
-    max-width: 120rem; /* 🔥 menos ancho = mejor UX */
+    max-width: 120rem; /* menos ancho = mejor UX */
     width: 90%;
     margin: 0 auto;
 }
