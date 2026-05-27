@@ -111,28 +111,59 @@
 
     <!-- DESCARGA -->
     <section class="download" id="app">
-        <h2>Descárganos</h2>
+        
+        <div class="download__container">
 
-        <div class="download__content">
-            <img src="src/images/celular.png" alt="Aplicación en celular" width="150" height="300" loading="lazy">
-
-            <div>
-                <p>
-                    Poli-Task ahora se encuentra disponible al tamaño de tu bolsillo,
-                    ayudar en la EPN nunca fue tan satisfactorio.
-                </p>
-
-                <div class="stores">
-                    <img src="src/images/APP.png" alt="Descargar en App Store" width="100" height="40" loading="lazy">
-                    <img src="src/images/PLAY.png" alt="Descargar en Play Store" width="100" height="40" loading="lazy">
-                </div>
-            </div>
+        <!-- CELULAR -->
+        <div class="download__phone">
+            <img src="src/images/movil.png" alt="PoliTask App">
         </div>
-    </section>
+
+        <!-- TEXTO -->
+        <div class="download__info">
+
+            <h4>DESCARGA POLITASK</h4>
+
+            <h2>
+                Lleva PoliTask <br>
+                contigo a todas partes
+            </h2>
+
+            <p>
+                Descarga la app y empieza a ganar puntos
+                completando tareas y ayudando a otros
+                estudiantes de la EPN.
+            </p>
+
+            <!-- QR -->
+            <div class="download__qr">
+                <img src="src/images/scanner.png" alt="QR">
+
+                <span>
+                    Escanea el código QR
+                    para descargar
+                </span>
+            </div>
+
+            <!-- STORES -->
+            <div class="download__stores">
+
+                <img src="src/images/googleplay.png" alt="Google Play">
+
+                <img src="src/images/appstore.png" alt="App Store">
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
     <!-- Gallery-->
     <section class="gallery" id="gallery">
 
-        <h2>Galería</h2>
+        <h2> G A  L   E  R  Í  A   </h2>
 
         <div class="gallery__grid">
 
@@ -167,17 +198,151 @@
 
     </section>
 
+        <!-- FAQ-->
+
+    <section id="faq" class="faq">
+
+    <h2>FAQs</h2>
+    <h3>Preguntas Frecuentes</h3>
+
+    <div class="faq__grid">
+
+        <details class="faq__item">
+            <summary>¿Qué es PoliTask?</summary>
+            <p>
+                PoliTask es una plataforma colaborativa donde estudiantes
+                de la EPN pueden crear y aceptar tareas universitarias.
+            </p>
+        </details>
+
+        <details class="faq__item">
+            <summary>¿Cómo gano puntos?</summary>
+            <p>
+                Los estudiantes ganan puntos al completar tareas aceptadas
+                dentro de la plataforma.
+            </p>
+        </details>
+
+        <details class="faq__item">
+            <summary>¿Para qué sirven los puntos?</summary>
+            <p>
+                Los puntos pueden canjearse en asociaciones universitarias,
+                billar, pingpong y comedor estudiantil.
+            </p>
+        </details>
+
+        <details class="faq__item">
+            <summary>¿Cómo funciona la reputación?</summary>
+            <p>
+                Los usuarios califican el servicio recibido después
+                de completar una tarea.
+            </p>
+        </details>
+
+        <details class="faq__item">
+            <summary>¿Qué tipo de tareas existen?</summary>
+            <p>
+                Tutorías, entrega de deberes, pasear perros de la universidad
+                y otros servicios estudiantiles.
+            </p>
+        </details>
+
+        <details class="faq__item">
+            <summary>¿PoliTask funciona en móviles?</summary>
+            <p>
+                Sí, PoliTask está diseñado para adaptarse a celulares y tablets.
+            </p>
+        </details>
+
+        </div>
+
+    </section>
+
     <!-- CONTACTO -->
     <section class="contact" id="contacto">
-        <h2>Contáctanos</h2>
+        <h4>CONTÁCTANOS</h4>
 
-        <form class="contact__form">
-            <input type="text" placeholder="Tu nombre" required>
-            <input type="email" placeholder="Tu correo" required>
-            <textarea placeholder="Tu mensaje" required></textarea>
-            <button type="submit">Enviar</button>
-        </form>
-    </section>
+    <h2>
+        ¿Alguna pregunta o comentario?
+    </h2>
+
+    <p class="contact__subtitle">
+        ¡Escríbenos! Estaremos felices de ayudarte.
+    </p>
+
+    <!-- FORM -->
+    <form class="contact__form">
+
+        <div class="contact__inputs">
+
+            <input 
+                type="email"
+                placeholder="Ingresa tu correo electrónico"
+            >
+
+            <input 
+                type="text"
+                placeholder="Ingresa tu nombre"
+            >
+
+        </div>
+
+        <textarea 
+            placeholder="Escribe tu mensaje"
+            rows="5"
+        ></textarea>
+
+        <button type="submit">
+            ENVIAR MENSAJE
+        </button>
+
+    </form>
+
+    <!-- CARDS -->
+    <div class="contact__cards">
+
+        <div class="contact__card">
+
+            <div class="contact__icon">👥</div>
+
+            <h3>Comunidad PoliTask</h3>
+
+            <p>
+                Conecta con estudiantes, completa tareas
+                y ayuda a otros a crecer juntos.
+            </p>
+
+        </div>
+
+        <div class="contact__card">
+
+            <div class="contact__icon">📞</div>
+
+            <h3>Soporte PoliTask</h3>
+
+            <p>
+                ¿Tienes dudas o necesitas ayuda?
+                Nuestro equipo está listo para apoyarte.
+            </p>
+
+        </div>
+
+        <div class="contact__card">
+
+            <div class="contact__icon">🎓</div>
+
+            <h3>Escuela Politécnica Nacional</h3>
+
+            <p>
+                Aplicación desarrollada para la comunidad
+                estudiantil de la EPN.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
 
     <!-- FOOTER -->
     <footer class="footer">
