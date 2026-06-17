@@ -3,16 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Poli-Task</title>
 
+    <title>Poli-Task</title>
+    <meta name="description" content="Poli-Task: plataforma para ayudar estudiantes y ganar recompensas en la EPN">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="src/css/normalize.css">
     <link rel="stylesheet" href="src/css/style.css">
 
-
+    <!-- Fonts optimizadas -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="https://th.bing.com/th/id/R.dea46a9b7f8d98c913b4654944599dbb?rik=I1vvbCu3nw7d1Q&pid=ImgRaw&r=0" type="image/x-icon">
+
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" as="style">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+
+    <!-- Preload imagen principal -->
+    <link rel="preload" as="image" href="src/images/buho.png">
+
+    <!-- Favicon local -->
+    <link rel="icon" href="src/images/favicon.ico">
 </head>
 
 <body>
@@ -21,31 +32,33 @@
     <nav class="navbar">
 
         <div class="navbar__brand">
-            <img src="src/images/logo.png" alt="logo" class="navbar__img">
+            <img src="src/images/logo.png" alt="logo" class="navbar__img" width="80" height="80">
             <h1 class="navbar__logo">
                 POLI<span class="navbar__logo--primary">-TASK</span>
             </h1>
         </div>
 
+        <!-- 🔥 MENÚ CORREGIDO -->
         <ul class="navbar__menu">
-            <li><a href="#" class="active">Inicio</a></li>
-            <li><a href="#">Nosotros</a></li>
-            <li><a href="#">App</a></li>
-            <li><a href="#">Recompensas</a></li>
+            <li><a href="#inicio" class="active">Inicio</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#app">App</a></li>
+            <li><a href="#recompensas">Recompensas</a></li>
+            <li><a href="#contacto">Contacto</a></li>
         </ul>
 
         <div class="navbar__login">
-            <img src="src/images/user.png" alt="user">
+            <img src="src/images/user.png" alt="user" width="40" height="40">
             <a href="#">Login</a>
         </div>
 
     </nav>
 </header>
 
-
 <main>
+
     <!-- HERO -->
-    <section class="hero">
+    <section class="hero" id="inicio">
         <div class="hero__text">
             <h2>AYUDAR</h2>
             <h3>NUNCA FUE TAN</h3>
@@ -53,10 +66,100 @@
         </div>
 
         <div class="hero__img">
-            <img src="src/images/buho.png" alt="Buho">
+            <img src="src/images/buho.png" alt="Buho" width="450" height="450">
         </div>
     </section>
-</main>
 
+    <!-- SOBRE NOSOTROS -->
+    <section class="about" id="nosotros">
+        <div class="about__text">
+            <h2>Sobre Nosotros</h2>
+            <p>
+                Somos una iniciativa de la comunidad de la Escuela Politécnica Nacional (la Poli) 
+                que impulsa la colaboración entre estudiantes. Con Poli-Task, ayudar a otros se 
+                convierte en puntos que puedes canjear por beneficios dentro del campus.
+            </p>
+        </div>
+
+        <div class="about__img">
+            <img src="src/images/manos.png" alt="Manos ayudando" width="450" height="450" loading="lazy">
+        </div>
+    </section>
+
+    <!-- RECOMPENSAS -->
+    <section class="rewards" id="recompensas">
+        <h2>Recompensas</h2>
+
+        <div class="rewards__grid">
+            <div class="reward">
+                <img src="src/images/comida.png" alt="Comida en PoliComedor" width="250" height="180" loading="lazy">
+                <p>PoliComedor</p>
+            </div>
+
+            <div class="reward">
+                <img src="src/images/uniforme.png" alt="Uniformes" width="250" height="180" loading="lazy">
+                <p>Uniformes</p>
+            </div>
+
+            <div class="reward">
+                <img src="src/images/juegos.png" alt="Juegos" width="250" height="180" loading="lazy">
+                <p>Juegos</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- DESCARGA -->
+    <section class="download" id="app">
+        <h2>Descárganos</h2>
+
+        <div class="download__content">
+            <img src="src/images/celular.png" alt="Aplicación en celular" width="150" height="300" loading="lazy">
+
+            <div>
+                <p>
+                    Poli-Task ahora se encuentra disponible al tamaño de tu bolsillo,
+                    ayudar en la EPN nunca fue tan satisfactorio.
+                </p>
+
+                <div class="stores">
+                    <img src="src/images/APP.png" alt="Descargar en App Store" width="100" height="40" loading="lazy">
+                    <img src="src/images/PLAY.png" alt="Descargar en Play Store" width="100" height="40" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="contact" id="contacto">
+        <h2>Contáctanos</h2>
+
+        <form class="contact__form">
+            <input type="text" placeholder="Tu nombre" required>
+            <input type="email" placeholder="Tu correo" required>
+            <textarea placeholder="Tu mensaje" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer__social">
+            <h3>Redes</h3>
+
+            <div class="footer__icons">
+                <img src="src/images/facebook.png" alt="Facebook" width="50" height="50" loading="lazy">
+                <img src="src/images/ig.png" alt="Instagram" width="50" height="50" loading="lazy">
+                <img src="src/images/x.png" alt="X (Twitter)" width="50" height="50" loading="lazy">
+            </div>
+        </div>
+
+        <div class="footer__contact">
+            <h3>Contáctanos</h3>
+            <p>+593 99 461 6687</p>
+            <p>politask@gmail.com</p>
+        </div>
+    </footer>
+
+</main>    
 </body>
 </html>
